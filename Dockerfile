@@ -1,7 +1,7 @@
-FROM mkozak/caddy:v4
+FROM mkozak/caddy:v5
 MAINTAINER Mateusz Kozak <mateusz@mkozak.pl>
 
-LABEL caddy_version="0.9.5" architecture="amd64"
+LABEL caddy_version="0.10" architecture="amd64"
 
 RUN mkdir /etc/caddy
 
