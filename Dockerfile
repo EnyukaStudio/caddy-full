@@ -1,7 +1,7 @@
-FROM mkozak/caddy:v9
+FROM mkozak/caddy:v10
 MAINTAINER Mateusz Kozak <mateusz@mkozak.pl>
 
-LABEL caddy_version="0.10.6" architecture="amd64"
+LABEL caddy_version="0.10.8" architecture="amd64"
 
 RUN mkdir /etc/caddy
 
@@ -11,5 +11,5 @@ WORKDIR /srv
 ADD Caddyfile /etc/caddy/Caddyfile
 ADD index.html /srv/index.html
 
-ENTRYPOINT ["/usr/bin/caddy"]
+ENTRYPOINT ["/usr/local/bin/caddy"]
 CMD ["--conf", "/etc/caddy/Caddyfile"]
